@@ -39,6 +39,7 @@ if(!$error){
 <div class="none">
 <?php
 $database = new db();
+// vestiging is again tafel artikel gerecht en medewerker is niet nodig
 $vestigingen = $database->select("SELECT winkelcode, winkelplaats, winkelnaam FROM winkel", []);
 $artikel = $database->select("SELECT artikelcode, artikel, prijs FROM artikel", []);
 $medewerkers = $database->select("SELECT medewerkerscode, gebruikersnaam, achternaam FROM medewerkers", []);
